@@ -11,7 +11,8 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("📦 AI Stock & Expiry Manager")
+st.title("📦 ASX — AI Stock eXpert")
+st.caption("AI Stock & Expiry Manager")
 st.write("Upload your stock Excel file to begin expiry analysis.")
 
 uploaded_file = st.file_uploader(
@@ -198,18 +199,12 @@ if uploaded_file is not None:
         st.error(f"Could not analyse the file: {e}")
 
 # Footer
+
 st.markdown(
     """
-    <div style="
-        position: fixed;
-        bottom: 10px;
-        right: 18px;
-        color: #888888;
-        font-size: 10px;
-        opacity: 0.75;
-        z-index: 999;
-    ">
-        Crafted with care by Yash Saxena
+    <div style="text-align:center; color:gray; padding:20px 0 5px 0;">
+        © 2026 <b>ASX — AI Stock eXpert</b><br>
+        <span style="font-size:12px;">Crafted with care by Yash Saxena</span>
     </div>
     """,
     unsafe_allow_html=True
